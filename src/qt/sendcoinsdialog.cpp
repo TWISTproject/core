@@ -36,7 +36,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a TWIST address (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)"));
 #endif
 
     addEntry();
@@ -458,7 +458,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString & text)
         else if (!CBitcoinAddress(text.toStdString()).IsValid())
         {
             ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
-            ui->labelCoinControlChangeLabel->setText(tr("WARNING: Invalid Stratis address"));
+            ui->labelCoinControlChangeLabel->setText(tr("WARNING: Invalid TWIST address"));
         }
         else
         {

@@ -22,7 +22,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Stratis cannot be compiled without assertions."
+# error "TWIST cannot be compiled without assertions."
 #endif
 
 //
@@ -77,7 +77,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Stratis Signed Message:\n";
+const string strMessageMagic = "TWIST Signed Message:\n";
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -996,14 +996,14 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-	int64_t PreMine = 98000000 * COIN;
-    if(pindexBest->nHeight == 1){return PreMine;} else {return 4*COIN;}
+	int64_t PreMine = 200000000 * COIN;
+    if(pindexBest->nHeight == 1){return PreMine;} else {return 20*COIN;}
 }
 
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
-    return (1 * COIN) + nFees;
+    return (20 * COIN) + nFees; // ~10.5% given 30 second blocktimes
 }
 
 static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
@@ -2649,7 +2649,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("stratis-loadblk");
+    RenameThread("twist-loadblk");
 
     CImportingNow imp;
 

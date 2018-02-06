@@ -1,7 +1,7 @@
 src/*.exe
-src/stratis
-src/stratisd
-src/test_stratis
+src/twist
+src/twistd
+src/test_twist
 src/build.h
 .*.swp
 *.*~*
@@ -10,11 +10,11 @@ src/build.h
 *.orig
 *.o
 *.patch
-.stratis
+.twist
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-stratis-qt
+twist-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

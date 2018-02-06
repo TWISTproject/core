@@ -1,6 +1,6 @@
 [Protocol]
-exec=stratis-qt '%u'
-protocol=stratis
+exec=twist-qt '%u'
+protocol=twist
 input=none
 output=none
 helper=true

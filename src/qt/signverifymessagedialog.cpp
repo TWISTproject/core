@@ -24,11 +24,11 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter a TWIST address (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
-    ui->addressIn_VM->setPlaceholderText(tr("Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)"));
-    ui->signatureIn_VM->setPlaceholderText(tr("Enter Stratis signature"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a TWIST address (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)"));
+    ui->signatureIn_VM->setPlaceholderText(tr("Enter TWIST signature"));
 #endif
 
     GUIUtil::setupAddressWidget(ui->addressIn_SM, this);

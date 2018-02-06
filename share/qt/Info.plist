@@ -3,27 +3,27 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>stratis.icns</string>
+	<string>twist.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Stratis-Qt</string>
+	<string>TWIST-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Stratis-Qt</string>
+	<string>TWIST-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.stratis.Stratis-Qt</string>
+	<string>co.twist.TWIST-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.stratis.StratisPayment</string>
+            <string>co.twist.TWISTPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>stratis</string>
+              <string>twist</string>
             </array>
           </dict>
         </array>

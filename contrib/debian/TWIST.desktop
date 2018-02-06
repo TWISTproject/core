@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TWIST
+Comment=TWIST P2P Cryptocurrency
+Exec=/usr/bin/twist-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/twist;
+Categories=Office;
+Name[en_GB]=TWIST

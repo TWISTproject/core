@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("STRAT");
-    case mBTC: return QString("mSTRAT");
-    case uBTC: return QString::fromUtf8("μSTRAT");
+    case BTC: return QString("TWIST");
+    case mBTC: return QString("mTWIST");
+    case uBTC: return QString::fromUtf8("μTWIST");
     default: return QString("???");
     }
 }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Stratiss");
-    case mBTC: return QString("Milli-Stratiss (1 / 1,000)");
-    case uBTC: return QString("Micro-Stratiss (1 / 1,000,000)");
+    case BTC: return QString("TWISTs");
+    case mBTC: return QString("Milli-TWISTs (1 / 1,000)");
+    case uBTC: return QString("Micro-TWISTs (1 / 1,000,000)");
     default: return QString("???");
     }
 }

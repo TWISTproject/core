@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Stratis</source>
-        <translation>Despre Stratis</translation>
+        <source>About TWIST</source>
+        <translation>Despre TWIST</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Stratis&lt;/b&gt; version</source>
-        <translation>Versiune &lt;b&gt;Stratis&lt;/b&gt;</translation>
+        <source>&lt;b&gt;TWIST&lt;/b&gt; version</source>
+        <translation>Versiune &lt;b&gt;TWIST&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Stratis developers</source>
+Copyright © 2014 The TWIST developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Stratis developers</translation>
+Copyright © 2014 The TWIST developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Stratis addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele Stratis pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
+        <source>These are your TWIST addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele TWIST pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Stratis address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă Stratis</translation>
+        <source>Sign a message to prove you own a TWIST address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă TWIST</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Stratis address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă Stratis</translation>
+        <source>Verify a message to ensure it was signed with a specified TWIST address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă TWIST</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Stratis will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Stratis se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
+        <source>TWIST will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>TWIST se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Stratis</source>
-        <translation>Arată informații despre Stratis</translation>
+        <source>Show information about TWIST</source>
+        <translation>Arată informații despre TWIST</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Stratis address</source>
-        <translation>Trimite monede către o adresă Stratis</translation>
+        <source>Send coins to a TWIST address</source>
+        <translation>Trimite monede către o adresă TWIST</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Stratis</source>
-        <translation>Modifică opțiuni de configurare pentru Stratis</translation>
+        <source>Modify configuration options for TWIST</source>
+        <translation>Modifică opțiuni de configurare pentru TWIST</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>Stratis</source>
-        <translation>Stratis</translation>
+        <source>TWIST</source>
+        <translation>TWIST</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Stratis</source>
-        <translation>Despre Stratis</translation>
+        <source>&amp;About TWIST</source>
+        <translation>Despre TWIST</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Stratis client</source>
-        <translation>Clientul Stratis</translation>
+        <source>TWIST client</source>
+        <translation>Clientul TWIST</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Stratis network</source>
-        <translation><numerusform>%n conexiune activă la reteaua Stratis</numerusform><numerusform>%n conexiuni active la reteaua Stratis</numerusform><numerusform>%n conexiuni active la reteaua Stratis</numerusform></translation>
+        <source>%n active connection(s) to TWIST network</source>
+        <translation><numerusform>%n conexiune activă la reteaua TWIST</numerusform><numerusform>%n conexiuni active la reteaua TWIST</numerusform><numerusform>%n conexiuni active la reteaua TWIST</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresa: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Stratis address or malformed URI parameters.</source>
-        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa Stratis invalidă sau parametrii URI malformați.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid TWIST address or malformed URI parameters.</source>
+        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa TWIST invalidă sau parametrii URI malformați.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Stratis can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. Stratis nu mai poate continua în condiții de siguranță și va iesi.</translation>
+        <source>A fatal error occurred. TWIST can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. TWIST nu mai poate continua în condiții de siguranță și va iesi.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1057,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Stratis address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă Stratis validă</translation>
+        <source>The entered address &quot;%1&quot; is not a valid TWIST address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă TWIST validă</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Stratis-Qt</source>
-        <translation>Stratis-Qt</translation>
+        <source>TWIST-Qt</source>
+        <translation>TWIST-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Stratis after logging in to the system.</source>
-        <translation>Pornește Stratis imdiat după logarea în sistem</translation>
+        <source>Automatically start TWIST after logging in to the system.</source>
+        <translation>Pornește TWIST imdiat după logarea în sistem</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Stratis on system login</source>
-        <translation>$Pornește Stratis la logarea în sistem</translation>
+        <source>&amp;Start TWIST on system login</source>
+        <translation>$Pornește TWIST la logarea în sistem</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Stratis client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul pentru cientul Stratis pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
+        <source>Automatically open the TWIST client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul pentru cientul TWIST pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1194,7 +1194,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the Stratis network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the TWIST network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1239,8 +1239,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stratis.</source>
-        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea Stratis.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting TWIST.</source>
+        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea TWIST.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1306,8 +1306,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Stratis.</source>
-        <translation>Aceasta setare va avea efect dupa repornirea Stratis.</translation>
+        <source>This setting will take effect after restarting TWIST.</source>
+        <translation>Aceasta setare va avea efect dupa repornirea TWIST.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1325,8 +1325,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stratis network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua Stratis după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TWIST network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua TWIST după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1399,7 +1399,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start stratis: click-to-pay handler</source>
+        <source>Cannot start twist: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1567,8 +1567,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Stratis-Qt help message to get a list with possible Stratis command-line options.</source>
-        <translation>Afișa mesajul de ajutor Stratis-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă Stratis.</translation>
+        <source>Show the TWIST-Qt help message to get a list with possible TWIST command-line options.</source>
+        <translation>Afișa mesajul de ajutor TWIST-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă TWIST.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1587,13 +1587,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Stratis - Debug window</source>
-        <translation>Stratis - fereastră depanare</translation>
+        <source>TWIST - Debug window</source>
+        <translation>TWIST - fereastră depanare</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Stratis Core</source>
-        <translation>Stratis Core</translation>
+        <source>TWIST Core</source>
+        <translation>TWIST Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1602,8 +1602,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Stratis debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschideti fisierul de depanare Stratis din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
+        <source>Open the TWIST debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Deschideti fisierul de depanare TWIST din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1612,8 +1612,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Stratis RPC console.</source>
-        <translation>Bine ati venit la consola Stratis RPC.</translation>
+        <source>Welcome to the TWIST RPC console.</source>
+        <translation>Bine ati venit la consola TWIST RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1793,8 +1793,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>Introduceți o adresă Stratis(ex:SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>Enter a TWIST address (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</source>
+        <translation>Introduceți o adresă TWIST(ex:1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1893,8 +1893,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Stratis address</source>
-        <translation>Atenție: Adresă Stratis invalidă</translation>
+        <source>WARNING: Invalid TWIST address</source>
+        <translation>Atenție: Adresă TWIST invalidă</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1926,7 +1926,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
+        <source>The address to send the payment to (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1967,8 +1967,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>Introduceți o adresă Stratis(ex:SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>Enter a TWIST address (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</source>
+        <translation>Introduceți o adresă TWIST(ex:1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</translation>
     </message>
 </context>
 <context>
@@ -1991,8 +1991,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>Adresa cu care semnati mesajul(ex. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>The address to sign the message with (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</source>
+        <translation>Adresa cu care semnati mesajul(ex. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2028,8 +2028,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Stratis address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă Stratis</translation>
+        <source>Sign the message to prove you own this TWIST address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă TWIST</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2055,13 +2055,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>Adresa cu care a fost semnat mesajul(ex. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>The address the message was signed with (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</source>
+        <translation>Adresa cu care a fost semnat mesajul(ex. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Stratis address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă Stratis</translation>
+        <source>Verify the message to ensure it was signed with the specified TWIST address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă TWIST</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2071,8 +2071,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>Introduceți o adresă Stratis(ex:SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>Enter a TWIST address (e.g. 1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</source>
+        <translation>Introduceți o adresă TWIST(ex:1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2081,8 +2081,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Stratis signature</source>
-        <translation>Introduceti semnatura Stratis</translation>
+        <source>Enter TWIST signature</source>
+        <translation>Introduceti semnatura TWIST</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2660,8 +2660,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>Stratis version</source>
-        <translation>Versiune Stratis</translation>
+        <source>TWIST version</source>
+        <translation>Versiune TWIST</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2670,8 +2670,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or stratisd</source>
-        <translation>Trimite comanda catre server sau stratisd</translation>
+        <source>Send command to -server or twistd</source>
+        <translation>Trimite comanda catre server sau twistd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2690,13 +2690,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: stratis.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: stratis.conf)</translation>
+        <source>Specify configuration file (default: twist.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: twist.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: stratisd.pid)</source>
-        <translation>Speficica fisier pid(implicit: stratis.pid)</translation>
+        <source>Specify pid file (default: twistd.pid)</source>
+        <translation>Speficica fisier pid(implicit: twist.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2713,13 +2713,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=stratisrpc
+rpcuser=twistrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TWIST Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2825,8 +2825,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stratis will not work properly.</source>
-        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit Stratis nu va functiona corect.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TWIST will not work properly.</source>
+        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit TWIST nu va functiona corect.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3120,7 +3120,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. Stratis is shutting down.</source>
+        <source>Initialization sanity check failed. TWIST is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3175,13 +3175,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Stratis</source>
-        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de Stratis</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of TWIST</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de TWIST</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Stratis to complete</source>
-        <translation>A fost nevoie de rescrierea portofelului: restartați Stratis pentru a finaliza</translation>
+        <source>Wallet needed to be rewritten: restart TWIST to complete</source>
+        <translation>A fost nevoie de rescrierea portofelului: restartați TWIST pentru a finaliza</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3240,8 +3240,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. Stratis is probably already running.</source>
-        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil Stratis ruleaza</translation>
+        <source>Unable to bind to %s on this computer. TWIST is probably already running.</source>
+        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil TWIST ruleaza</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3275,7 +3275,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Stratis is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. TWIST is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

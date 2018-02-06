@@ -26,7 +26,7 @@ class CReserveKey;
 class CWallet;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
-static const unsigned int MAX_BLOCK_SIZE = 1000000;
+static const unsigned int MAX_BLOCK_SIZE = 2000000;
 /** The maximum size for mined blocks */
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 /** The maximum size for transactions we're willing to relay/mine **/
@@ -57,9 +57,9 @@ static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 0; }
 inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 0; }
-inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1470467000; }
+inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1517918928; }
 
-inline bool IsDriftReduced(int64_t nTime) { return TestNet() || nTime > 1479513600; } // Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT
+inline bool IsDriftReduced(int64_t nTime) { return TestNet() || nTime > 1517918928; } // Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT
 
 inline int64_t TestingDrift(int64_t nTime) { return nTime + 128 * 60 * 60; }
 inline int64_t MainNetDrift(int64_t nTime) { return nTime + 15; }
@@ -70,7 +70,7 @@ inline int64_t FutureDriftV2(int64_t nTime) {
 }
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? FutureDriftV2(nTime) : FutureDriftV1(nTime); }
 
-inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 64 : 60; }
+inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 30 : 30; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
