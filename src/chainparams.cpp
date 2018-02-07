@@ -95,20 +95,20 @@ public:
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1517918928, vin, vout, 0);
+        CTransaction txNew(1, 1518033954, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1517918928;
+        genesis.nTime    = 1518033954;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 1982949;
+        genesis.nNonce   = 3520087;
 
         hashGenesisBlock = genesis.GetHash();
         //MineGenesis(genesis);
 
-        assert(hashGenesisBlock == uint256("0x000007b384d63ba6a5983c32338e13f753808a2159cf3b1f4403c3a130702559"));
-        assert(genesis.hashMerkleRoot == uint256("0x5050dc55cc348d4f7ebf6e0e64672287c1aff309166cf34492ef2886fb56665c"));
+        assert(hashGenesisBlock == uint256("0x000001ed1fe67e61ccb99d59c199221d638fa17b7a66a3cfe2b177f209566738"));
+        assert(genesis.hashMerkleRoot == uint256("0xba524065df79a272668f365102656079a9256e11a489b665531692239ace5048"));
 
         //vSeeds.push_back(CDNSSeedData("Seednode1", "seednode1.twistplatform.com"));
 
@@ -158,12 +158,12 @@ public:
         strDataDir = "testnet";
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 2488194;
-        genesis.nTime    = 1517920466;
+        genesis.nNonce = 3958172;
+        genesis.nTime    = 1518033955;
   
         hashGenesisBlock = genesis.GetHash();
         //MineGenesis(genesis);
-        assert(hashGenesisBlock == uint256("0x000003320e8179c073af17985e01ff607d4bf87555fced12b980c76c8c80cfeb"));
+        assert(hashGenesisBlock == uint256("0x00000fdbbc31a18587d647851b63bca63030916faabaad0f774bba662ff02229"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -195,14 +195,14 @@ public:
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1517920528;
+        genesis.nTime = 1518033956;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 4452081;
+        genesis.nNonce = 8449456;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18434;
         strDataDir = "regtest";
         //MineGenesis(genesis);
-        assert(hashGenesisBlock == uint256("0x000008870e2e36ef6e8498e10e90112cdd034f3d9710f59acc6ebe4a915ab51d"));
+        assert(hashGenesisBlock == uint256("0x00000f1a0e463c9a9b12f18b417aa866eb200188ea9912501d0dc2464e82546a"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }

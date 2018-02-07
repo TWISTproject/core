@@ -57,9 +57,9 @@ static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 0; }
 inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 0; }
-inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1517918928; }
+inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1518033954; }
 
-inline bool IsDriftReduced(int64_t nTime) { return TestNet() || nTime > 1517918928; } // Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT
+inline bool IsDriftReduced(int64_t nTime) { return TestNet() || nTime > 1518033954; } // Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT
 
 inline int64_t TestingDrift(int64_t nTime) { return nTime + 128 * 60 * 60; }
 inline int64_t MainNetDrift(int64_t nTime) { return nTime + 15; }
