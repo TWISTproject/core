@@ -53,13 +53,13 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
+static const int64_t COIN_YEAR_REWARD = 10 * CENT; // 10% per year
 
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 0; }
 inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 0; }
-inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1518033954; }
+inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1518460551; }
 
-inline bool IsDriftReduced(int64_t nTime) { return TestNet() || nTime > 1518033954; } // Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT
+inline bool IsDriftReduced(int64_t nTime) { return TestNet() || nTime > 1518460551; } // Drifting Bug Fix, hardfork on Sat, 19 Nov 2016 00:00:00 GMT
 
 inline int64_t TestingDrift(int64_t nTime) { return nTime + 128 * 60 * 60; }
 inline int64_t MainNetDrift(int64_t nTime) { return nTime + 15; }

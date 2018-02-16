@@ -42,8 +42,8 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 
-int nStakeMinConfirmations = 50;
-unsigned int nStakeMinAge = 60; // 8 hours
+int nStakeMinConfirmations = 35;
+unsigned int nStakeMinAge = 60; // 1 minute
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 50;
@@ -996,8 +996,21 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-	int64_t PreMine = 200000000 * COIN;
-    if(pindexBest->nHeight == 1){return PreMine;} else {return 1*COIN;}
+    // airdrop premine
+    if(pindexBest->nHeight == 1) {
+        return 170000000 * COIN;
+    }
+    // developer fund premine
+    else if(pindexBest->nHeight == 2) {
+        return 20000000 * COIN;
+    }
+    // community/bounty fund premine
+    else if(pindexBest->nHeight == 3) {
+        return 10000000 * COIN;
+    }
+    else {
+        return 1 * COIN;
+    }
 }
 
 // miner's coin stake reward
@@ -1006,7 +1019,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     return (20 * COIN) + nFees; // ~10.5% given 30 second blocktimes
 }
 
-static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
+static const int64_t nTargetTimespan = 8 * 60;  // 8 mins
 
 // ppcoin: find last block index up to pindex
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)

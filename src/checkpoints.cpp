@@ -27,10 +27,14 @@ namespace Checkpoints
     //
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (  0,     uint256("0x000001ed1fe67e61ccb99d59c199221d638fa17b7a66a3cfe2b177f209566738") )
-        (  1,     uint256("0x0cad2fd32a5edd2e3d8d74555263b59da4da1c63a88daa8508fe749b8bf5bab1") )
-        (  2,     uint256("0xe3972aa13c95d350400a278b020e7bc66291bb95b7115a43a5c715a91d445beb") ) // Premine
-        (  3,     uint256("0xeadd24bf8ee21057264dc066c247b622d46ab050ca122ab1d33179b790c5ea69") )
+        (  0,     uint256("0x00000826ca14fa68927bcba493d31760964a3b02c9b0dd6e32fb2c5c5f3af003") )	// genesis
+        (  1,     uint256("0x400b66d7ab0857b755cd7edbf8a2f405405d103ef24730d00d4c31f5b5fe18ae") )
+        (  2,     uint256("0x3b076032745bb640f48fc86254a1982fdfc3b2896763501c90095c1bd6ea3d21") )	// airdrop premine
+        (  3,     uint256("0x6d9296fb4d722cb832032bac1448d3ae40a1740d119898e07883b36d20219ef0") )	// dev fund premine
+        (  4,     uint256("0xb2fc21bb161a43e48fa6a6512e336c12ceeeb64064cf1d3c87a39d75f66c6bea") )	// bounty fund premine
+        (  100,   uint256("0x016d95cffa7670bba90177b81b72f4ada549675c0ff259090f8b116d934e4e31") )
+        (  160,   uint256("0xeac99ff8ce6fb985264d6d409010c6507f35f7e356305ce5ff9d2ef2018e569c") )	// airdrop distribution
+        (  170,   uint256("0x74c64bfb04d362e10f1efde796a1777275c9f4ef616f9d9c88b4257dadbb2587") )
     ;
 
     // TestNet has no checkpoints
