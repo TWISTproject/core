@@ -59,9 +59,16 @@
 #include <QStyle>
 
 #include <iostream>
+#include <sstream>
 
 extern CWallet* pwalletMain;
 extern int64_t nLastCoinStakeSearchInterval;
+
+// gui information
+extern std::string encryptGUIInfo;
+extern std::string stakingGUIInfo;
+extern std::string blockSyncGUIInfo;
+
 double GetPoSKernelPS();
 
 BitcoinGUI::BitcoinGUI(QWidget *parent):
@@ -563,7 +570,6 @@ void BitcoinGUI::setNumBlocks(int count)
     int secs = lastBlockDate.secsTo(currentDate);
 
     tooltip = tr("Processed %1 blocks of transaction history.").arg(count);
-
     // Set icon state: spinning if catching up, tick otherwise
     if(secs < 90*60)
     {
@@ -626,6 +632,7 @@ void BitcoinGUI::setNumBlocks(int count)
 
     // Don't word-wrap this (fixed-width) tooltip
     tooltip = QString("<nobr>") + tooltip + QString("</nobr>");
+    blockSyncGUIInfo = tooltip.toStdString();
 
     labelBlocksIcon->setToolTip(tooltip);
     progressBarLabel->setToolTip(tooltip);
@@ -877,6 +884,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
     case WalletModel::Unencrypted:
         labelEncryptionIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/lock_open" : ":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelEncryptionIcon->setToolTip(tr("Wallet is <b>not encrypted</b>"));
+        encryptGUIInfo = "Wallet is <b>not encrypted</b>";
         changePassphraseAction->setEnabled(false);
         unlockWalletAction->setVisible(false);
         lockWalletAction->setVisible(false);
@@ -885,6 +893,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
     case WalletModel::Unlocked:
         labelEncryptionIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/lock_open" : ":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>unlocked</b>"));
+        encryptGUIInfo = "Wallet is <b>encrypted</b> and currently <b>unlocked</b>";
         changePassphraseAction->setEnabled(true);
         unlockWalletAction->setVisible(false);
         lockWalletAction->setVisible(true);
@@ -893,6 +902,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
     case WalletModel::Locked:
         labelEncryptionIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/lock_closed" : ":/icons/lock_closed").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>locked</b>"));
+        encryptGUIInfo = "Wallet is <b>encrypted</b> and currently <b>locked</b>";
         changePassphraseAction->setEnabled(true);
         unlockWalletAction->setVisible(true);
         lockWalletAction->setVisible(false);
@@ -1030,20 +1040,27 @@ void BitcoinGUI::updateStakingIcon()
 
         labelStakingIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/staking_on" : ":/icons/staking_on").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelStakingIcon->setToolTip(tr("Staking.<br>Your weight is %1<br>Network weight is %2<br>Expected time to earn reward is %3").arg(nWeight).arg(nNetworkWeight).arg(text));
+        std::ostringstream oss;
+        oss << "Staking.<br>Your weight is " << nWeight << "<br>Network weight is " << nNetworkWeight << "<br>Expected time to earn reward is " << text.toStdString();
+        stakingGUIInfo = oss.str();
     }
     else
     {
         labelStakingIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/staking_off" : ":/icons/staking_off").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+        std::string stakeText = "";
         if (pwalletMain && pwalletMain->IsLocked())
-            labelStakingIcon->setToolTip(tr("Not staking because wallet is locked"));
+            stakeText = "Not staking because wallet is locked";
         else if (vNodes.empty())
-            labelStakingIcon->setToolTip(tr("Not staking because wallet is offline"));
+            stakeText = "Not staking because wallet is offline";
         else if (IsInitialBlockDownload())
-            labelStakingIcon->setToolTip(tr("Not staking because wallet is syncing"));
+            stakeText = "Not staking because wallet is syncing";
         else if (!nWeight)
-            labelStakingIcon->setToolTip(tr("Not staking because you don't have mature coins"));
+            stakeText = "Not staking because you don't have mature coins";
         else
-            labelStakingIcon->setToolTip(tr("Not staking"));
+            stakeText = "Not staking";
+
+        labelStakingIcon->setToolTip(tr(stakeText.c_str()));
+        stakingGUIInfo = stakeText;
     }
 }
 

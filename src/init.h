@@ -18,4 +18,9 @@ void Shutdown();
 bool AppInit2(boost::thread_group& threadGroup);
 std::string HelpMessage();
 
+// gui information
+extern std::string encryptGUIInfo;
+extern std::string stakingGUIInfo;
+extern std::string blockSyncGUIInfo;
+
 #endif

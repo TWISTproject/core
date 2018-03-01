@@ -41,6 +41,11 @@ unsigned int nDerivationMethodIndex;
 unsigned int nMinerSleep;
 bool fUseFastIndex;
 
+// gui information
+string encryptGUIInfo = "";
+string stakingGUIInfo = "";
+string blockSyncGUIInfo = "";
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // Shutdown

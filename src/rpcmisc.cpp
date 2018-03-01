@@ -74,6 +74,20 @@ Value getinfo(const Array& params, bool fHelp)
     return obj;
 }
 
+Value getguiinfo(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 0)
+        throw runtime_error(
+            "getguiinfo\n"
+            "Returns an object containing various gui info.");
+
+    Object obj;
+    obj.push_back(Pair("encryption", encryptGUIInfo));
+    obj.push_back(Pair("staking", stakingGUIInfo));
+    obj.push_back(Pair("sync", blockSyncGUIInfo));
+    return obj;
+}
+
 #ifdef ENABLE_WALLET
 class DescribeAddressVisitor : public boost::static_visitor<Object>
 {
