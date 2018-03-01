@@ -88,6 +88,18 @@ Value getguiinfo(const Array& params, bool fHelp)
     return obj;
 }
 
+Value gettoolboxversion(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 0)
+        throw runtime_error(
+            "gettoolboxversion\n"
+            "Returns an object containing the toolbox version.");
+
+    Object obj;
+    obj.push_back(Pair("version", toolboxVersion));
+    return obj;
+}
+
 #ifdef ENABLE_WALLET
 class DescribeAddressVisitor : public boost::static_visitor<Object>
 {

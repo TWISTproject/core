@@ -46,6 +46,8 @@ string encryptGUIInfo = "";
 string stakingGUIInfo = "";
 string blockSyncGUIInfo = "";
 
+int toolboxVersion = 1;
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // Shutdown

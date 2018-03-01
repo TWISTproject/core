@@ -23,4 +23,6 @@ extern std::string encryptGUIInfo;
 extern std::string stakingGUIInfo;
 extern std::string blockSyncGUIInfo;
 
+extern int toolboxVersion;
+
 #endif
