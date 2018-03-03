@@ -79,12 +79,19 @@ Value getguiinfo(const Array& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "getguiinfo\n"
-            "Returns an object containing various gui info.");
+            "Returns an object containing various information about the qt gui.");
 
     Object obj;
+    // text
     obj.push_back(Pair("encryption", encryptGUIInfo));
     obj.push_back(Pair("staking", stakingGUIInfo));
+    obj.push_back(Pair("connection", connectionGUIInfo));
     obj.push_back(Pair("sync", blockSyncGUIInfo));
+    // icons
+    obj.push_back(Pair("encryptionicon", encryptGUIIcon));
+    obj.push_back(Pair("stakingicon", stakingGUIIcon));
+    obj.push_back(Pair("connectionicon", connectionGUIIcon));
+    obj.push_back(Pair("syncicon", blockSyncGUIIcon));
     return obj;
 }
 

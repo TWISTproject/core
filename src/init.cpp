@@ -44,7 +44,12 @@ bool fUseFastIndex;
 // gui information
 string encryptGUIInfo = "";
 string stakingGUIInfo = "";
+string connectionGUIInfo = "";
 string blockSyncGUIInfo = "";
+int encryptGUIIcon = 0;
+int stakingGUIIcon = 0;
+int connectionGUIIcon = 0;
+int blockSyncGUIIcon = 0;
 
 int toolboxVersion = 1;
 

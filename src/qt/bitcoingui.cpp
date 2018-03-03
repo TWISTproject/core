@@ -67,7 +67,12 @@ extern int64_t nLastCoinStakeSearchInterval;
 // gui information
 extern std::string encryptGUIInfo;
 extern std::string stakingGUIInfo;
+extern std::string connectionGUIInfo;
 extern std::string blockSyncGUIInfo;
+extern int encryptGUIIcon;
+extern int stakingGUIIcon;
+extern int connectionGUIIcon;
+extern int blockSyncGUIIcon;
 
 double GetPoSKernelPS();
 
@@ -541,14 +546,17 @@ void BitcoinGUI::setNumConnections(int count)
     QString icon;
     switch(count)
     {
-    case 0: icon = fUseBlackTheme ? ":/icons/black/connect_0" : ":/icons/connect_0"; break;
-    case 1: case 2: case 3: icon = fUseBlackTheme ? ":/icons/black/connect_1" : ":/icons/connect_1"; break;
-    case 4: case 5: case 6: icon = fUseBlackTheme ? ":/icons/black/connect_2" : ":/icons/connect_2"; break;
-    case 7: case 8: case 9: icon = fUseBlackTheme ? ":/icons/black/connect_3" : ":/icons/connect_3"; break;
-    default: icon = fUseBlackTheme ? ":/icons/black/connect_4" : ":/icons/connect_4"; break;
+    case 0: icon = fUseBlackTheme ? ":/icons/black/connect_0" : ":/icons/connect_0"; connectionGUIIcon = 0; break;
+    case 1: case 2: case 3: icon = fUseBlackTheme ? ":/icons/black/connect_1" : ":/icons/connect_1"; connectionGUIIcon = 1; break;
+    case 4: case 5: case 6: icon = fUseBlackTheme ? ":/icons/black/connect_2" : ":/icons/connect_2"; connectionGUIIcon = 2; break;
+    case 7: case 8: case 9: icon = fUseBlackTheme ? ":/icons/black/connect_3" : ":/icons/connect_3"; connectionGUIIcon = 3; break;
+    default: icon = fUseBlackTheme ? ":/icons/black/connect_4" : ":/icons/connect_4"; connectionGUIIcon = 4; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
     labelConnectionsIcon->setToolTip(tr("%n active connection(s) to TWIST network", "", count));
+    std::ostringstream oss;
+    oss << "" << count << " active connection(s) to TWIST network";
+    connectionGUIInfo = oss.str();
 }
 
 void BitcoinGUI::setNumBlocks(int count)
@@ -575,6 +583,7 @@ void BitcoinGUI::setNumBlocks(int count)
     {
         tooltip = tr("Up to date") + QString(".<br>") + tooltip;
         labelBlocksIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/synced" : ":/icons/synced").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+        blockSyncGUIIcon = 1;
 
         overviewPage->showOutOfSyncWarning(false);
 
@@ -628,6 +637,8 @@ void BitcoinGUI::setNumBlocks(int count)
         tooltip += tr("Last received block was generated %1 ago.").arg(timeBehindText);
         tooltip += QString("<br>");
         tooltip += tr("Transactions after this will not yet be visible.");
+
+        blockSyncGUIIcon = 0;
     }
 
     // Don't word-wrap this (fixed-width) tooltip
@@ -885,6 +896,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
         labelEncryptionIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/lock_open" : ":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelEncryptionIcon->setToolTip(tr("Wallet is <b>not encrypted</b>"));
         encryptGUIInfo = "Wallet is <b>not encrypted</b>";
+        encryptGUIIcon = 0;
         changePassphraseAction->setEnabled(false);
         unlockWalletAction->setVisible(false);
         lockWalletAction->setVisible(false);
@@ -894,6 +906,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
         labelEncryptionIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/lock_open" : ":/icons/lock_open").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>unlocked</b>"));
         encryptGUIInfo = "Wallet is <b>encrypted</b> and currently <b>unlocked</b>";
+        encryptGUIIcon = 0;
         changePassphraseAction->setEnabled(true);
         unlockWalletAction->setVisible(false);
         lockWalletAction->setVisible(true);
@@ -903,6 +916,7 @@ void BitcoinGUI::setEncryptionStatus(int status)
         labelEncryptionIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/lock_closed" : ":/icons/lock_closed").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         labelEncryptionIcon->setToolTip(tr("Wallet is <b>encrypted</b> and currently <b>locked</b>"));
         encryptGUIInfo = "Wallet is <b>encrypted</b> and currently <b>locked</b>";
+        encryptGUIIcon = 1;
         changePassphraseAction->setEnabled(true);
         unlockWalletAction->setVisible(true);
         lockWalletAction->setVisible(false);
@@ -1043,6 +1057,7 @@ void BitcoinGUI::updateStakingIcon()
         std::ostringstream oss;
         oss << "Staking.<br>Your weight is " << nWeight << "<br>Network weight is " << nNetworkWeight << "<br>Expected time to earn reward is " << text.toStdString();
         stakingGUIInfo = oss.str();
+        stakingGUIIcon = 1;
     }
     else
     {
@@ -1061,6 +1076,7 @@ void BitcoinGUI::updateStakingIcon()
 
         labelStakingIcon->setToolTip(tr(stakeText.c_str()));
         stakingGUIInfo = stakeText;
+        stakingGUIIcon = 0;
     }
 }
 

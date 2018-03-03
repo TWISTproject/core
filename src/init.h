@@ -21,7 +21,12 @@ std::string HelpMessage();
 // gui information
 extern std::string encryptGUIInfo;
 extern std::string stakingGUIInfo;
+extern std::string connectionGUIInfo;
 extern std::string blockSyncGUIInfo;
+extern int encryptGUIIcon;
+extern int stakingGUIIcon;
+extern int connectionGUIIcon;
+extern int blockSyncGUIIcon;
 
 extern int toolboxVersion;
 
