@@ -232,6 +232,7 @@ static const CRPCCommand vRPCCommands[] =
     { "getinfo",                &getinfo,                true,      false,     false },
     { "getguiinfo",             &getguiinfo,             true,      false,     false },
     { "gettoolboxversion",      &gettoolboxversion,      true,      false,     false },
+    { "base58decode",           &base58decode,           true,      false,     false },
     { "getrawmempool",          &getrawmempool,          true,      false,     false },
     { "getblock",               &getblock,               false,     false,     false },
     { "getblockbynumber",       &getblockbynumber,       false,     false,     false },

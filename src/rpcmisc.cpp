@@ -74,6 +74,25 @@ Value getinfo(const Array& params, bool fHelp)
     return obj;
 }
 
+Value base58decode(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 1)
+        throw runtime_error(
+            "base58decode <base58encodedstring>\n"
+            "Return decoded base58 string from <base58encodedstring>.");
+
+    std::string base58string = params[0].get_str();
+    std::vector<unsigned char> result;
+    DecodeBase58(base58string, result);
+
+    std::string decoded;
+    decoded.assign(result.begin(), result.end());
+
+    Object obj;
+    obj.push_back(Pair("decoded", decoded));
+    return obj;
+}
+
 Value getguiinfo(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)
